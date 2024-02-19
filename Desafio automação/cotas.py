@@ -9,7 +9,7 @@ class TotalCotas:
 
     def Quantidade(self):
         #   Uso o import re para encontrar um padrão para achar os socios e suas cotas da empresa
-        #   Onde as partes procuradas estão entre () no caso um de uma sequencia de caracteres (.*?) e outra uma de digitos (\d+)
+        #   As partes procuradas estão entre () no caso um de uma sequencia de caracteres (.*?) e outra uma de digitos (\d+)
         pattern = r"\d+\.\s+(.*?),.*?CPF\s+\d{3}\.\d{3}\.\d{3}-\d{2}.*?detentor[ao]* de (\d+) cotas"
 
         for linha in self.document.paragraphs:    #   Recebe uma linha do documento
